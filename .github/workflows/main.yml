@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: RO1303/hello-world-composite-action@v1
+        uses: RO1303/hello-world-composite-action@v2
         with:
           who-to-greet: 'this is a message running in my 1st action'
           
