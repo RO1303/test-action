@@ -9,5 +9,5 @@ jobs:
       - id: foo
         uses: RON1303/hello-world-composite-action@v1
         with:
-          who-to-greet: 'this is a message running in my first action'
+          who-to-greet: 'this is a message running in my 1st action'
           
