@@ -28,5 +28,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: generate_code
     steps:
-      - run: echo ${{ needs.generate_code.outputs.pull_request_url }}
+      - run: echo ${{ needs.generate_code.outputs.pull_request_url.value }}
 
