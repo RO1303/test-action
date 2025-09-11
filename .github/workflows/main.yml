@@ -14,3 +14,7 @@ jobs:
         shell: bash
         env:
           RANDOM_NUMBER: ${{ steps.foo.outputs.random-number }}
+      - run: echo ${{ steps.foo.outputs.random-number }}
+        shell: bash
+      - run: echo ${{ steps.foo.outputs.pull_request_url }}
+        shell: bash
