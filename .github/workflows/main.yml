@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: AutoCoder Composite Action
-        uses: RO1303/AutoCoder@v1
+        uses: RO1303/AutoCoder@v2
         with:
           github_token: $\{{ secrets.GITHUB_TOKEN }}
           repository: $GITHUB_REPOSITORY
