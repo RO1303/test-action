@@ -28,5 +28,5 @@ jobs:
     needs: generate_code
     steps:
       - name: Print Output
-        run: echo ${{ needs.generate_code.Output }}
+        run: echo ${{ needs.generate_code.pull_request_url }}
 
