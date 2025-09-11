@@ -13,5 +13,12 @@ jobs:
         uses: RO1303/AutoCoder@main
         with:
           who-to-greet: 'Rona the Octocat'
+          github_token: $\{{ secrets.GITHUB_TOKEN }}
+          repository: $GITHUB_REPOSITORY
+          issue_number: ${{ github.event.issue.number }}
+          script_path: RO1303/AutoCoder/scripts/script.sh
+          openai_api_key: $\{{ secrets.OPENAI_API_KEY }}
+          issue_label: 'autocoder'
+
       - run: echo ${{ steps.foo.outputs.pull_request_url }}
         shell: bash
