@@ -10,6 +10,8 @@ jobs:
   generate_code:
     runs-on: ubuntu-latest
     steps:
+      - name: Greeting
+        run: echo "Hello from test-action repository workflow main.yml"
       - name: Checkout
         uses: actions/checkout@v2
       - name: AutoCoder Composite Action
