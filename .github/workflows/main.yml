@@ -23,10 +23,10 @@ jobs:
           script_path: RO1303/AutoCoder/scripts/script.sh
           openai_api_key: $\{{ secrets.OPENAI_API_KEY }}
           issue_label: 'autocoder'
+
   print_output:
     runs-on: ubuntu-latest
     needs: generate_code
     steps:
-      - name: Print Output
-        run: echo ${{ needs.generate_code.pull_request_url }}
+      - run: echo ${{ needs.generate_code.outputs.pull_request_url }}
 
