@@ -23,4 +23,7 @@ jobs:
           script_path: RO1303/AutoCoder/scripts/script.sh
           openai_api_key: $\{{ secrets.OPENAI_API_KEY }}
           issue_label: 'autocoder'
+      - name: Print Output
+        needs: AutoCoder Composite Action
+        run: echo ${{ needs.AutoCoder Composite Action.Output }}
 
