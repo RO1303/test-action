@@ -16,7 +16,7 @@ jobs:
           github_token: $\{{ secrets.GITHUB_TOKEN }}
           repository: $GITHUB_REPOSITORY
           issue_number: ${{ github.event.issue.number }}
-          script_path: RO1303/AutoCoder/scripts/script.sh
+          script_path: RO1303/AutoCoder/scripts/
           openai_api_key: $\{{ secrets.OPENAI_API_KEY }}
           issue_label: 'autocoder'
 
