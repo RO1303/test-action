@@ -14,10 +14,13 @@ jobs:
         with:
           GITHUB_TOKEN: $\{{ secrets.GITHUB_TOKEN }}
           REPOSITORY: $GITHUB_REPOSITORY
-          issue_number: ${{ github.event.issue.number }}
-          script_path: RO1303/AutoCoder/scripts
-          openai_api_key: $\{{ secrets.OPENAI_API_KEY }}
-          issue_label: 'autocoder'
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          SCRIPT_PATH: RO1303/AutoCoder/scripts
+          OPENAI_API_KEY: $\{{ secrets.OPENAI_API_KEY }}
+          LABEL: 'autocoder'
 
       - run: echo ${{ steps.foo.outputs.pull_request_url }}
         shell: bash
+
+
+# "GITHUB_TOKEN", "REPOSITORY", "ISSUE_NUMBER", "OPENAI_API_KEY", "SCRIPT_PATH", "LABEL"
