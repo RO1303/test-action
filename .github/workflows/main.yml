@@ -12,9 +12,8 @@ jobs:
       - id: foo
         uses: RO1303/AutoCoder@main
         with:
-          who-to-greet: 'Rona the Octocat'
-          github_token: $\{{ secrets.GITHUB_TOKEN }}
-          repository: $GITHUB_REPOSITORY
+          GITHUB_TOKEN: $\{{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: $GITHUB_REPOSITORY
           issue_number: ${{ github.event.issue.number }}
           script_path: RO1303/AutoCoder/scripts
           openai_api_key: $\{{ secrets.OPENAI_API_KEY }}
